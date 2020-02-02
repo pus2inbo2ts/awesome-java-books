@@ -727,7 +727,8 @@ install_prepare_protocol(){
     done
 #     read -p "Which protocol you'd select(Default: ${protocols[0]}):" protocol
 #     [ -z "$protocol" ] && protocol=1
-protocol=5
+#protocol=5
+protocol=1
     expr ${protocol} + 1 &>/dev/null
     if [ $? -ne 0 ]; then
         echo -e "[${red}Error${plain}] Please enter a number"
@@ -755,7 +756,8 @@ install_prepare_obfs(){
     done
 #     read -p "Which obfs you'd select(Default: ${obfs[0]}):" r_obfs
 #     [ -z "$r_obfs" ] && r_obfs=1
-r_obfs=6
+#r_obfs=6
+r_obfs=1
     expr ${r_obfs} + 1 &>/dev/null
     if [ $? -ne 0 ]; then
         echo -e "[${red}Error${plain}] Please enter a number"
